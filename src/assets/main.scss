@@ -5,6 +5,16 @@
 }
 .cont {
     padding: $contPadding;
+}.fit-cont {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}.custom-header {
+    font-size: $headerSize;
+    line-height: 100px;
+    color: $secColor;
+    margin: 0;
+    font-weight: $superHeaderWeight;
 }
 
 .top-header {
@@ -76,8 +86,8 @@
             align-items: flex-end;
             
             span:nth-child(2) {
-                font-size: 90px;
-                line-height: 90px;
+                font-size: $headerSize;
+                line-height: 110px;
                 font-weight: bolder;
                 span {
                     color: $priColor;
@@ -94,11 +104,6 @@
                 position: absolute;
                 bottom: 20px;
                 z-index: 15;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
             }
             
         }
@@ -113,4 +118,63 @@
         font-weight: $superHeaderWeight;
         padding: .5em 4em;
     }
+}
+
+.about-cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-cont {
+            width: 75%;
+            height: 575px;
+            padding: 1em;
+            position: relative;
+            box-shadow: 5px 5px 10px 5px rgba(0,0,0,.1);
+            background-color: white;
+            div {
+                position: absolute;
+                width: 50%;
+                height: 220px;
+                bottom: -100px;
+                right: -6.5%;
+                padding: 1em;
+                box-shadow: 5px 5px 10px 5px rgba(0,0,0,.1);
+                background-color: white;
+            }
+        }
+        .sub-topic, p {
+            align-self: flex-start;
+            width: 95%;
+            font-size: 18px;
+            font-weight: 300;
+        } .sub-topic {
+            color: $secColor;
+            position: relative;
+        } .sub-topic:after {
+            content: '';
+            position: absolute;
+            top: .8em;
+            margin-left: 1em;
+            width: 3em;
+            border-top: 1px solid $secColor;
+        } h1 {
+            align-self: flex-start;
+            width: 95%;
+        } .custom-btn {
+            background-color: $secColor;
+            margin-top: 2em;
+            color: white;
+            font-weight: bold;
+            span {
+                color: white;
+                right: 1.8em;
+            }
+        }
+    }
+
 }

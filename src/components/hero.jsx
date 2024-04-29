@@ -21,7 +21,7 @@ export default function HeroSection() {
         </div>
         <div>
             <div className="hero-slide">
-                <img src={plumbing} alt="error404" />
+                <img src={plumbing} alt="error404" className="fit-cont" />
             </div>
         </div>
       </div>
