@@ -28,6 +28,13 @@
 } .short-desc {
     font-size: 20px;
     font-weight: 300;
+}.f-overlay {
+    background-color: rgba(100,70,191,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .top-header {
@@ -257,8 +264,42 @@
         position: relative;
         padding-left: 2em;
         .testi-msg {
-            height: 400px;
-            border: 1px solid black;
+            position: relative;        
+            background-image: url('./images/p7.jpg');
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            padding: 5em 2em 3em 2em;
+            color: white;
+            // width: 75%;
+            span {
+                position: relative;
+                z-index: 15;
+            }
+            span:nth-child(3) {
+                justify-self: flex-end;
+                align-self: flex-end;
+                margin-top: auto;
+            } span:nth-child(1) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: rotate(-180deg);
+                font-size: 5em;
+                color: $priColor;
+            }
+        } .testi-msg::before {
+            content: '';
+            position: absolute;
+            z-index: 15;
+            left: 0;
+            top: 0;
+            border-right: .5em solid $priColor;
+            height: 60%;
         } .testi-img {
             position: absolute;
             bottom: -75px;
