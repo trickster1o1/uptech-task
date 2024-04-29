@@ -20,9 +20,9 @@ export default function HeroSection() {
           </span>
         </div>
         <div>
-            <div className="hero-slide">
-                <img src={plumbing} alt="error404" className="fit-cont" />
-            </div>
+          <div className="hero-slide">
+            <img src={plumbing} alt="error404" className="fit-cont" />
+          </div>
         </div>
       </div>
       <div className="hero-footer">20+ Years of Experience</div>

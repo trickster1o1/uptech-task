@@ -25,6 +25,9 @@
     margin-left: 1em;
     width: 3em;
     border-top: 1px solid $secColor;
+} .short-desc {
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .top-header {
@@ -75,7 +78,6 @@
     top: -6.5em;
     z-index: 10;
     background-image: url('./images/plumbing-home.jpg');
-    // background-position: center;
     background-position-x: center;
     background-position-y: -20px;
     background-size: cover;
@@ -84,7 +86,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: rgba(100,70,191,.8);
-        // background-color: rgba(104,129,191,.8);
         height: 100%;
         width: 100%;
         div {
@@ -135,10 +136,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
+    margin-top: -9em;
+    // background-image: url('');
+    // background-repeat: no-repeat;
+    background:linear-gradient(88deg, 
+            #fff 1.15%, rgba(253, 246, 235, 0.89) 90.02%,
+            rgba(253, 246, 235, 0.86) 15.88%,),
+            url('./images/p5.jpg') no-repeat center, 
+            lightgray -0.675px -16.405px / 100.36% 138.657% no-repeat;
+    background-position-x: center;
+    background-position-y: -5px;
+    background-size: cover;
+
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         .img-cont {
             width: 75%;
             height: 575px;
@@ -180,15 +194,15 @@
 }
 
 .feature-cont {
+    margin-top: $contGap;
     text-align: center;
     h1 {
         margin-bottom: .2em;
     }
     .f-info {
-        div {
+        
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            padding: 1em;
             div {
                 display: flex;
                 flex-direction: column;
@@ -201,8 +215,62 @@
                     font-size: 16px;
                 }
             }
-        } .proj-card {
+        .proj-card {
             height: 475px;
+            margin-top: 2em;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            .f-overlay {
+                background-color: rgba(100,70,191,.8);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 92.7%;
+                padding-top: 35px;                
+                span {
+                    margin-right: 35px;
+                    display: block;
+                    color: white;
+                }
+            }
+        } .proj-card:nth-child(1) {
+            background-image: url('./images/p4.jpg');
+        }.proj-card:nth-child(2) {
+            background-image: url('./images/p5.jpg');
+        }.proj-card:nth-child(3) {
+            background-image: url('./images/p6.jpg');
+        }.proj-card:nth-child(4) {
+            background-image: url('./images/p7.jpg');
+        }
+    }
+}
+
+.story-cont {
+    padding-top: $contGap;
+    padding-bottom: $contGap;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .testi-cont {
+        position: relative;
+        padding-left: 2em;
+        .testi-msg {
+            height: 400px;
+            border: 1px solid black;
+        } .testi-img {
+            position: absolute;
+            bottom: -75px;
+            left: -45px;
+            border: 10px solid $priColor;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
     }
 }
