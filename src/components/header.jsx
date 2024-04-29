@@ -1,6 +1,7 @@
 import ig from "../assets/images/logo/ig.svg";
 import lin from "../assets/images/logo/in.svg";
 import whatsapp from "../assets/images/logo/whatsapp.svg";
+import HeroSection from "./hero";
 export default function Header() {
   return (
     <>
@@ -25,6 +26,7 @@ export default function Header() {
             <li>Contact</li>
         </ul>
       </nav>
+        <HeroSection />
     </>
   );
 }

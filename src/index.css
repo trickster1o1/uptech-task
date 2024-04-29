@@ -5,4 +5,19 @@ body {
 } body, html {
   max-width: 100vw;
   /* overflow-x: hidden; */
+} .custom-btn {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  color: #6881bf;
+  font-weight: bolder;
+  text-decoration: none;
+  width: fit-content;
+  padding: 0 4em 0 3em;
+  position: relative;
+} .custom-btn > span {
+  position: absolute;
+  right: -50px;
 }
