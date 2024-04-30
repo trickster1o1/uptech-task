@@ -455,6 +455,34 @@
             } 
         }
     }
+} .footer-bottom {
+    background-color: #24437c;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    a {
+        color: white;
+    } .footer-media {
+        display: flex;
+        gap: 1em;
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2em;
+            width: 2em;
+            border-radius: 50%;
+            border: 1px solid white;
+            img {
+                height: 1em;
+                width: 1em;
+            }
+        }
+    } 
 }
 
 .service-cont {
