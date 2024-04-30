@@ -30,12 +30,11 @@ export default function ClientStory() {
     //Implementing the setInterval method
     const interval = setInterval(() => {
         setSelectTesti(i=>i.id < 3 ? testi[i.id] : testi[0]);
-        console.log(selectTesti)
     }, 4000);
 
     //Clearing the interval
     return () => clearInterval(interval);
-}, [testi, selectTesti]);
+}, [selectTesti]);
   return (
     <div className="cont story-cont">
       <div>

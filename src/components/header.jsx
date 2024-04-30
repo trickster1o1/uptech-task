@@ -19,14 +19,15 @@ export default function Header() {
       <nav className="navbar">
         <div>Business Logo</div>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Serices</li>
-            <li>Contact</li>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Serices</li>
+          <li>Contact</li>
         </ul>
+        <span class="material-symbols-outlined b-mnu">menu</span>
       </nav>
-        <HeroSection />
+      <HeroSection />
     </>
   );
 }
