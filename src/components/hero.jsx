@@ -29,7 +29,7 @@ export default function HeroSection() {
             <img src={heroImg} alt="error404" className="fit-cont" />
             <div className="slide-nav">
               {images.map((i, index) => (
-                <span key={index} onClick={()=>setHeroImg(i)} style={heroImg === i ? {backgroundColor: 'white'} : null}></span>
+                <span className="dot-nav" key={index} onClick={()=>setHeroImg(i)} style={heroImg === i ? {backgroundColor: 'white'} : null}></span>
               ))}
             </div>
           </div>
