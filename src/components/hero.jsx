@@ -1,6 +1,11 @@
+import { useState } from "react";
 import plumbing from "../assets/images/PLUMBING.jpg";
+import p4 from "../assets/images/p4.jpg";
+import p5 from "../assets/images/p7.jpg";
 
 export default function HeroSection() {
+  const images = [plumbing, p4, p5];
+  const [heroImg, setHeroImg] = useState(plumbing);
   return (
     <div className="hero-cont">
       <div className="hero-info">
@@ -21,7 +26,12 @@ export default function HeroSection() {
         </div>
         <div>
           <div className="hero-slide">
-            <img src={plumbing} alt="error404" className="fit-cont" />
+            <img src={heroImg} alt="error404" className="fit-cont" />
+            <div className="slide-nav">
+              {images.map((i, index) => (
+                <span key={index} onClick={()=>setHeroImg(i)} style={heroImg === i ? {backgroundColor: 'white'} : null}></span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

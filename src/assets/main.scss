@@ -122,6 +122,24 @@
                 position: absolute;
                 bottom: 20px;
                 z-index: 15;
+                .slide-nav {
+                    display: flex;
+                    gap: 10px;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    flex-direction: row;
+                    bottom: 10px;
+                    z-index: 15;
+                    span {
+                        border-radius: 50%;
+                        display: block;
+                        background-color: $priColor;
+                        height: 8px;
+                        width: 8px;
+                        
+                    }
+                }
             }
             
         }
