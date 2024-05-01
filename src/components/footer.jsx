@@ -6,14 +6,14 @@ export default function Footer() {
     <>
       <div className="cont footer-cont">
         <div>
-          <div className="logo-cont">
+          {/* <div className="logo-cont">
             <h1 className="custom-header">Business Logo</h1>
             <p>
               Locally owned and operated company with 20 years of industry
               experience. We value honesty and integrity in all aspects of our
               business
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="quick-links">
           <h1 className="custom-header">Quick Links</h1>
@@ -55,7 +55,7 @@ export default function Footer() {
             <li>
               <span class="material-symbols-outlined">call</span> (123) 123-1234
             </li>
-            <li>
+            <li className='foot-email'>
               <span class="material-symbols-outlined">mail</span>
               yourbusiness@business.com
             </li>
@@ -66,7 +66,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="cont footer-bottom">
+      {/* <div className="cont footer-bottom">
         <div>Copyright @2023 - All rights reserved. Designed by <a href="https://uptechsolution.com.np">Uptech Solutions</a></div>
         <div className="footer-media">
             <span><img src={fb} alt="FB" /></span>
@@ -74,7 +74,7 @@ export default function Footer() {
             <span><img src={tw} alt="tw" /></span>
             
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
