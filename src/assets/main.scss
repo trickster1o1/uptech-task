@@ -406,6 +406,8 @@
             outline: none;
             margin-top: 2em;
             padding: 15px;
+        } textarea {
+            resize: none;
         } button {
             display: flex;
             justify-content: center;
