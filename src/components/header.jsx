@@ -1,10 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ig from "../assets/images/logo/ig.svg";
 import lin from "../assets/images/logo/in.svg";
 import whatsapp from "../assets/images/logo/whatsapp.svg";
 import HeroSection from "./hero";
+import {gsap} from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 export default function Header() {
   const [showNav,setShowNav] = useState(false);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(()=> {
+    let ctx = gsap.context(()=> {
+      gsap.to('.navbar', {
+        scrollTrigger: {
+          trigger: '.hero-cont',
+          start: 'bottom 10%',
+          toggleActions: "restart none reverse none",
+        },
+        duration: .2,
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        backgroundColor: '#4273c1',
+        ease: 'Power2.inOut',
+        zIndex: 90,
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
       <div className="mob-nav" style={showNav ? {'display':'flex'}: {'display':'none'}}>
