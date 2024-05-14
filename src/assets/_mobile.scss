@@ -82,6 +82,9 @@
         .contact-detail {
             margin-top: 4em;
         }
+    }.footer-bottom {
+        min-height: 4em !important;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 1615px) {
@@ -219,5 +222,16 @@
             display: none !important;
             
         }
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .hero-cont {
+        min-height: 1000px !important;
+        .hero-info {
+            min-height: 1000px !important;
+        }
+    } .about-cont {
+        min-height: 1000px !important;
     }
 }
