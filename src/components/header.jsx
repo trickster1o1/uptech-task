@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <>
       <div className="mob-nav" style={showNav ? {'display':'flex'}: {'display':'none'}}>
-        <span class="material-symbols-outlined cl-nav" onClick={()=>setShowNav(false)}>close</span>
+        <span className="material-symbols-outlined cl-nav" onClick={()=>setShowNav(false)}>close</span>
         <ul>
           <li>
             <a href="/">Home</a>
@@ -72,7 +72,7 @@ export default function Header() {
           <li>Serices</li>
           <li>Contact</li>
         </ul>
-        <span class="material-symbols-outlined b-mnu" onClick={()=>setShowNav(true)}>menu</span>
+        <span className="material-symbols-outlined b-mnu" onClick={()=>setShowNav(true)}>menu</span>
       </nav>
       <HeroSection />
     </>

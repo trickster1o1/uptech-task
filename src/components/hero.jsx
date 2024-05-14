@@ -20,7 +20,7 @@ export default function HeroSection() {
           <span>
             <a className="custom-btn" href="/">
               Explore more
-              <span class="material-symbols-outlined">arrow_forward</span>
+              <span className="material-symbols-outlined">arrow_forward</span>
             </a>
           </span>
         </div>

@@ -48,7 +48,7 @@ export default function ClientStory() {
       <div className="testi-cont">
         <div>
           <div className="testi-msg">
-            <span class="material-symbols-outlined">format_quote</span>
+            <span className="material-symbols-outlined">format_quote</span>
             <span>{selectTesti.msg}</span>
             <span>{selectTesti.name}</span>
             <div className="f-overlay"></div>

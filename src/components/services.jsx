@@ -16,7 +16,7 @@ export default function Service() {
           </p>
           <a href="/">
             view details
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span className="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
         <div>
@@ -30,7 +30,7 @@ export default function Service() {
 
           <a href="/">
             view details
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span className="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
         <div>
@@ -44,7 +44,7 @@ export default function Service() {
           </p>
           <a href="/">
             view details
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span className="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
         <div>
@@ -59,7 +59,7 @@ export default function Service() {
 
           <a href="/">
             view details
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span className="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
       </div>

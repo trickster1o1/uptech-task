@@ -49,18 +49,18 @@ export default function Footer() {
           <h1 className="custom-header">Basic Info</h1>
           <ul>
             <li>
-              <span class="material-symbols-outlined">local_library</span>
+              <span className="material-symbols-outlined">local_library</span>
               LaPorte, IN 46350
             </li>
             <li>
-              <span class="material-symbols-outlined">call</span> (123) 123-1234
+              <span className="material-symbols-outlined">call</span> (123) 123-1234
             </li>
             <li className='foot-email'>
-              <span class="material-symbols-outlined">mail</span>
+              <span className="material-symbols-outlined">mail</span>
               yourbusiness@business.com
             </li>
             <li>
-              <span class="material-symbols-outlined">browse_gallery</span>
+              <span className="material-symbols-outlined">browse_gallery</span>
               Mon-Fri: 9AM - 5PM
             </li>
           </ul>

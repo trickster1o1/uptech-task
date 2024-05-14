@@ -27,7 +27,7 @@ export default function About() {
           relationships with our clients and guarentee your satisfaction!
           <a className="custom-btn" href="/">
             Read More
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span className="material-symbols-outlined">arrow_forward</span>
           </a>
         </p>
       </div>
